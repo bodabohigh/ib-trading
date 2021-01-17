@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT_ID=
+PROJECT_ID=ib-trading-bot
 # number of inactive revisions to keep
 KEEP=1
 

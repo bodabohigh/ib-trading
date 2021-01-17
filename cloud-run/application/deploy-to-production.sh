@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-PROJECT_ID=
-IMAGE="eu.gcr.io/${PROJECT_ID}/cloud-run/application:stable"
+PROJECT_ID=ib-trading-bot
+IMAGE="us.gcr.io/${PROJECT_ID}/cloud-run/application:stable"
 if [ "$#" -eq 0 ]; then
   SERVICES=("close-all" "strategy-1" "strategy-2" "summary" "trade-reconciliation")
 else
