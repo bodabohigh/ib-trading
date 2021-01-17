@@ -1,4 +1,4 @@
-FROM us.gcr.io/ib-trading-bot/cloud-run/base:stable
+FROM us.gcr.io/ib-trading-bot/cloud-run/base
 
 # copy Python stuff and pip install packages
 WORKDIR /home
