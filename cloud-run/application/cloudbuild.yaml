@@ -2,9 +2,9 @@ images:
 - "us.gcr.io/${PROJECT_ID}/cloud-run/application"
 steps:
 - name: "gcr.io/cloud-builders/docker"
-  args: ["build", "-t", "eu.gcr.io/${PROJECT_ID}/cloud-run/application:${SHORT_SHA}", "cloud-run/application/"]
+  args: ["build", "-t", "us.gcr.io/${PROJECT_ID}/cloud-run/application:${SHORT_SHA}", "cloud-run/application/"]
 - name: "gcr.io/cloud-builders/docker"
-  args: ["push", "eu.gcr.io/${PROJECT_ID}/cloud-run/application:${SHORT_SHA}"]
+  args: ["push", "us.gcr.io/${PROJECT_ID}/cloud-run/application:${SHORT_SHA}"]
 - name: 'gcr.io/cloud-builders/gcloud-slim'
   entrypoint: "bash"
   args:
